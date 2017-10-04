@@ -56,10 +56,9 @@
 
 * Operation Point Analysis:
 
-![alt text](https://github.com/nikhil1198/2-Stage-Operational-Amplifier/blob/master/op1.JPG) ![alt text](https://github.com/nikhil1198/2-Stage-Operational-Amplifier/blob/master/op2.JPG)
+![alt text](https://github.com/nikhil1198/2-Stage-Operational-Amplifier/blob/master/op1.JPG)        ![alt text](https://github.com/nikhil1198/2-Stage-Operational-Amplifier/blob/master/op2.JPG)
 
 * Frequency Response: 
-
  * The frequency response (Bode Plot curve) of the two stage op amp simulated is similar to a single pole one stage op amp in the required bandwidth (operation region)
  * The second pole occurs at 800MHz(P2=gm6/Cl , approx.) which in insignificant to our amplifier operation.
  * The only zero occurring at Z1=gm6/Cc  because of Miller capacitor introduced(Cc) is at 1.25 GHz(approx.) which is also insignificant to our operation.
