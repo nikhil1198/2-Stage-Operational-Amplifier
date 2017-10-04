@@ -47,6 +47,42 @@
 * Vdd = 3.3V
 * Id = 8mW/3.3V = 2.424242 mA
 
+![alt text](https://github.com/nikhil1198/2-Stage-Operational-Amplifier/blob/master/calc.JPG)
+
+# LTSpice Simulation Results:
+* Input:
+
+![alt text](https://github.com/nikhil1198/2-Stage-Operational-Amplifier/blob/master/input.JPG)
+
+* Operation Point Analysis:
+
+![alt text](https://github.com/nikhil1198/2-Stage-Operational-Amplifier/blob/master/op1.JPG)
+
+![alt text](https://github.com/nikhil1198/2-Stage-Operational-Amplifier/blob/master/op2.JPG)
+
+* Frequency Response: 
+
+![alt text](https://github.com/nikhil1198/2-Stage-Operational-Amplifier/blob/master/out123.JPG)
+
+ * The frequency response (Bode Plot curve) of the two stage op amp simulated is similar to a single pole one stage op amp in the required bandwidth (operation region)
+ * The second pole occurs at 800MHz(P2=gm6/Cl , approx.) which in insignificant to our amplifier operation.
+ * The only zero occurring at Z1=gm6/Cc  because of Miller capacitor introduced(Cc) is at 1.25 GHz(approx.) which is also insignificant to our operation.
+ * Hence the Bode plot is as shown and is equivalent to a one pole system till a few hundred MHz  (until we have significant gain)
+ 
+# Conclusion:
+
+* A common “workhorse” opamp for medium performance applications.
+* A reasonably simple structure with reasonable performance
+* Design issues introduced : Two poles close to each other introduced. Very poor phase margin and instability until high load capacitance used.
+* Hence, the Concept of pole splitting introduced to decrease (shift left ) the dominant pole frequency which introduced because of stage one, causing stability
+
+# Summary:
+
+* A two stage OpAmp is designed with the given specifications. 
+* First, a hand design was done followed by simulation in LTspice IV. The results are in agreement with the required value with a very small trade-off.
+* The trade-off may be due to neglecting body effect or any other transistor in built properties.
+
+
 
 
 
